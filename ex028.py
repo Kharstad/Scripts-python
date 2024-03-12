@@ -1,6 +1,12 @@
-import random
-NumeroDaSorte = random.randrange(0,5)
-NumeroUsuario = int(input('Qual número o PC escolheu número de 0 a 5? '))
+from random import randint
+from time import sleep
+NumeroDaSorte = randint(0,5)
+print('-=-' * 20)
+print('O Computador está pensando em um número entre 0 e 5')
+print('-=-' * 20)
+print('Processando...')
+sleep(3)
+NumeroUsuario = int(input('Qual número o PC escolheu? '))
 if NumeroDaSorte == NumeroUsuario:
     print('PARABÉNS! Você acertou que foi o número {}'.format(NumeroDaSorte))
 else:
