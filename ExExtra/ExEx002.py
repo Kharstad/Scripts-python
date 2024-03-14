@@ -3,6 +3,11 @@ igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as 
 
 while True:
 
-    nome = str(input('Digite seu nome: '))
-    senha = str(input('Digite sua senha: '))
+    nome = str(input('Defina seu nome: '))
+    senha = str(input('Defina sua senha: '))
+    if nome == senha:
+        print('!!!O nome e a senha devem ser distintos!!!')
+    else:
+        break
 
+print('Login criado com êxito!')
